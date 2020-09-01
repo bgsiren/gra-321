@@ -1,12 +1,19 @@
 * {
-background-color: light purple;
+background-color: purple;
 
 }
 
 h1 {
 font-style: normal;
-font-size: 20;
+font-size: 100;
 font-family: sans-serif;
 font: Helvetica;
+
+}
+
+body {
+font: Times;
+font-size: 50
+font-family: sans-serif;
 
 }
