@@ -13,6 +13,17 @@ h1 {
   color: #6E7376;
 }
 
+h2 {
+  background-color: transparent;
+  font-style:normal;
+  text-align:center;
+  position:relative; 
+  top: 325px;
+  font-size: 60px;
+  font-family: "Condor", sans-serif;
+  color: whitesmoke;
+}
+
 body{
   font-family: "Helvetica", sans-serif;
   font-size: 30px;
@@ -44,4 +55,13 @@ button {
   background-color: #B6C7DD;
   color: #2F5D8C;
   padding:  0.2em 1em 0.2em 1em;
+}
+
+.container{
+  background-image:url(../img/wallpaperflare.com_wallpaper.jpg);
+  background-size:cover;
+  opacity: 90%;
+  height:600px;
+  margin: 0 auto;
+  width:100%;
 }
