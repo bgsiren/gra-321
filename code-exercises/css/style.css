@@ -1,14 +1,28 @@
 * {
-background-color: #F5F6F2;
+background-color: #F9F6E4;
 }
 
 h1 {
-font-style: normal;
-font-size: 50px;
-font-family: "Condor", sans-serif;
-margin-left: 100px;
-margin-right: 50px;
-margin-top: 55px;
-margin-bottom: 40px;
-color: #6E7376;
+  font-style: normal;
+  font-size: 50px;
+  font-family: "Condor", sans-serif;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  color: #6E7376;
+}
+
+body{
+  font-family: "Helvetica", sans-serif;
+  font-size: 30px;
+  color: #BDB6AA;
+}
+
+ul{
+margin-left: 90px;
+}
+
+button{
+  margin-left: 100px
 }
