@@ -36,7 +36,7 @@ button {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
-  padding: 0.2em 1em 0.2em 1em 
+  padding: 0.2em 1em 0.2em 1em; 
 }
 
 .button-hover:hover{
