@@ -23,6 +23,25 @@ ul{
 margin-left: 90px;
 }
 
-button{
-  margin-left: 100px
+p {
+  color: #999348;
+  margin-left: 100px;
+  margin-bottom: 10px
+}
+
+button {
+  background-color: #2F5D8C;
+  border: none;
+  margin-right: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding: 0.2em 1em 0.2em 1em 
+}
+
+.button-hover:hover{
+  border: none;
+  background-color: #B6C7DD;
+  color: #2F5D8C;
+  padding:  0.2em 1em 0.2em 1em;
 }
