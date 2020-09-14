@@ -97,3 +97,12 @@ button {
     color: maroon;
   }
 }
+
+.mockup{
+  background-image:url(../img/Mockup_Penguin.png);
+  background-size:cover;
+  height:1300px;
+  margin: 0 auto;
+  width:120%;
+  position:relative;
+}
