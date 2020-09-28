@@ -1,13 +1,105 @@
 * {
-background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 body {
-font-family: "Helvetica", sans-serif;
-font-size: 30px;
-color: #BDB6AA;
+    font-family: "Helvetica", sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
 }
 
-ul{
-margin-left: 120px;
+p{
+    font-family: Georgia;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 26px;
+}
+.page {
+    width: 1440px;
+    height: 2220px;  
+}
+
+.left-column{
+    float: left;
+    width: 419px;
+    height: 624px;
+    margin-left:274px;
+    margin-top:87px;
+}
+
+.initial-letter{
+    font-family: "AkzidenzGroteskBE-Super", sans-serif;
+    font-size: 125px;
+    color: #000000;
+    text-align: justify;
+    float: left;
+    margin-top: -50px;
+    margin-bottom: -60px;
+    margin-right: 4px;
+}
+
+.initial-paragraph{
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 26px;
+    margin-left: 4px;
+    width: 308px;
+    float:left;
+    display: none;
+}
+
+.left-body{
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.right-column{
+    width: 430px;
+    height: 624px;
+    float: left;
+    margin-left: 33px;
+    margin-top: 87px;
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 26px;
+
+}
+
+.footer{
+    float: left;
+    font-family: "GillSans", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 84px;
+    margin-left:150px;
+    width: 1115px;
+    height: 48px;
+}
+
+.page-number{
+    float:left;
+    font-family: "GillSans", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 1016px;
+    width: 307px;
+    height: 22px;
 }
