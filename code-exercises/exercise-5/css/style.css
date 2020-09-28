@@ -15,6 +15,7 @@ p{
     letter-spacing: 0;
     text-align: justify;
     line-height: 26px;
+    margin:auto;
 }
 .page {
     width: 1440px;
