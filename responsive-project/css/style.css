@@ -1,8 +1,38 @@
-* {
+body {
     background-color: white;
 }
 
-h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 50px;
+.bg-for-slideshow {
+    background-color: #E6E5E3;
+    width: 460px;
+    height: auto;
+}
+
+.header-slide-show{
+    font-family: "Roboto", san-serif;
+    font-size: 20px;
+}
+
+.about-us {
+    font-family: "Optima", serif;
+    font-size: 18px;
+    color: #A8977C;
+    text-align: center;
+    opacity: 100%;
+}
+    
+h1{
+
+}
+
+p1{
+
+}
+
+h2{
+
+}
+
+p2{
+
 }
