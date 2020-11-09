@@ -6,21 +6,79 @@
     <meta name="description" content="Desktop&Mobile views for Charlie's Cafe">
     <meta name="keywords" content="GRA321 Digital, Responsive Project">
     <meta name="author" content="Yajun 'Beatrice' Guo">
+    <link rel="icon" type="image/png" href="./img/favicon_Charlie.jpg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link href="./css/normalize.css" type="text/css" rel="stylesheet">
     <link href="./css/style.css" type="text/css" rel="stylesheet"> 
   </head>
 
   <body>
-
-  <!--Heading-->
-    <div class="Navi"> <img src="img/Logo_Name.jpg" alt="Charlie's Cafe Logo" Style="width:128px; height:48px; margin-left:27px; margin-top:40px; margin-bottom:50px; float:left;">
+  <!--Header-->
+    <header>
+    <div class="navi" id="top"><a href="#top"><img src="
+      img/Logo_Name.jpg" alt="Charlie's Cafe Logo" Style="width:128px; height:48px; margin-left:27px; margin-top:40px; margin-bottom:50px; float:left;"></a>   
+      <div id="links" style="float:right; display: block;">
+        <a class="navi-link" href="#specials">SPECIALS</a>
+        <a class="navi-link" href="#beverages">BEVERAGES</a>
+        <a class="navi-link" href="#visit-us">VISIT US</a>
+        <a class="navi-link" href="#food">FOOD</a>
+        <a class="navi-link" href="#contact-us">CONTACT US</a>
+        <a class="navi-link" href="#follow-us">FOLLOW US</a>
+        <a class="navi-link" href="#reviews">REVIEWS</a>
+      </div>
+      <label class="bars"><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></label>
     </div>
-    <div class="hamburger-menu"> <button>Hamberger Menu</button>
-      </div>
-    <div class="bg-for-content">
-      <div class="header-slideshow"> Header Slide Show 
-      </div>
+    
+  <!--Carousel-->
+  <div class="carousel">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item image-1">
+          </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item image-2">
+          </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item image-3">
+          </div>
+        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item image-4">
+          </div>
+        <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item image-5">
+          </div>
+        <label for="carousel-5" class="carousel-control prev control-4">‹</label>
+        <label for="carousel-4" class="carousel-control next control-5">›</label>
+        <label for="carousel-3" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-2" class="carousel-control next control-3">›</label>
+        <label for="carousel-1" class="carousel-control prev control-5">‹</label>
+        <label for="carousel-5" class="carousel-control next control-1">‹</label>
+        <label for="carousel-4" class="carousel-control prev control-3">›</label>
+        <label for="carousel-3" class="carousel-control next control-4">›</label>
+        <label for="carousel-2" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-1" class="carousel-control next control-5">›</label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-4" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-5" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+  </div>
+
+
+  <!--About Us-->
       <div class="about-us"> 
       Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! 
       Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods. 
@@ -28,8 +86,22 @@
       </div>
     </div>
 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+   </header> 
 <!--SPECIALS-->
+  <section id="specials">
     <h1>SPECIALS</h1>
+    </section>
     <h2>SML</h2>
     <h3>Thai Iced Cappuccino</h3>
     <p1>Channel your inner exotic spirit with a double shot of espresso finished with sweetened condensed milk</p1>
@@ -42,7 +114,9 @@
       either double or triple shots***</p3>
    <div class="bg-for-content">
 <!--BEVERAGES-->
+    <section id="beverages">
      <h1>BEVERAGES</h1>
+      </section>
     <!--Cold Drinks-->
      <h3>Cold Drinks</h3>
      <div class="menu-items">
@@ -109,7 +183,9 @@
   
 <!--FOOD-->
   <div>
-    <h1>FOOD</h1>
+    <section id="food">
+     <h1>FOOD</h1>
+      </section>
       <h3>Italiano</h3>
       <p1>Grilled baguette with prosciutto, mozzarella, sliced tomato, basil pesto and a touch of balsamic vinegar</p1>
       <p2>9.20
@@ -131,9 +207,11 @@
 
   <!--VISIT US-->
   <div class="bg-for-content">
-    <h1>VISIT US</h1>
-    <p4>Visit us at Hayden Library, Design North-Architecture, and Biodesign Each location has its own personality, find the one that suits you!</p4>
-    <div class="hayden-library"> <img src="./img/Hayden.jpg" style="width:265px; height: 191px; margin-left:59px; margin-top:50px;">
+    <section id="visit-us">
+      <h1>VISIT US</h1>
+       </section>  
+      <p4>Visit us at Hayden Library, Design North-Architecture, and Biodesign Each location has its own personality, find the one that suits you!</p4>
+     <div class="hayden-library"> <img src="./img/Hayden.jpg" style="width:265px; height: 191px; margin-left:59px; margin-top:50px;">
       </div> 
       <div class="intros"> Charlie’s Café Hayden Library
         </div>
@@ -175,7 +253,9 @@
   
   <!--CONTACT US--> 
   <div>
+    <section id="contact-us">
     <h1>CONTACT US</h1>
+    </section>
       <h3>E-mail Address</h3>
       <p1>charliescafesm@outlook.com</p1>
       <h3>Charlie’s Café Hayden Library</h3>
@@ -188,8 +268,10 @@
 
   <!--FOLLOW US--> 
   <div>
+  <section id="follow-us">
     <h1>FOLLOW US</h1>
-      <div class="facebookicon"> <img src="./img/FB_Logo.png" style="width:37px; height:37px;">
+     </section> 
+    <div class="facebookicon"> <img src="./img/FB_Logo.png" style="width:37px; height:37px;">
       </div>
       <p1>https://www.facebook.com/charliescafeasu/</p1>
       <div class="facebookicon"> <img src="./img/Yelp_Logo.png" style="width:70px; height:34px;">
@@ -197,11 +279,18 @@
 
   <!--REVIEWS--> 
   <div>
-    <h1>FOLLOW US</h1>  
-    <p4>Share your experience at Charlie’s Café and earn a chance to win a FREE DRINK!</p4>
+    <section id="reviews">
+    <h1>REVIEWS</h1>  
+   </section> 
+   <p4>Share your experience at Charlie’s Café and earn a chance to win a FREE DRINK!</p4>
   </div>
-  
+
+  <footer>
   <!--Logo At The Bottom--> 
   <div class="mustache-logo"> <img src="./img/Logo.jpg" style="width:30%; height:30%;">
+  </div>
+  </footer>
+
   </body>
+
 </html>

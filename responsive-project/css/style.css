@@ -1,17 +1,205 @@
 html {
     background-color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navi{
+    overflow: hidden;
+    position: relative;
+}
+
+.navi #myLinks {
+    display: none;
+  }
+
+.navi #links {
+    width: 100%;
+}
+
+.navi-link {
+  background: #EEECE9;
+  box-shadow: inset 0 0 4px 2px rgba(165,151,127,0.24);
+  font-family:'Unna-Bold', serif;
+  color: #A8977C;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+  padding: 2px;
+}
+
+.navi a.icon {
+  display: block;
+  position: absolute;
+  right: 28px;
+  top: 53px;
+  font-size: 30px;
+  color: black;
+}
+
+.navi a.icon:hover,
+.navi a.icon:focus {
+    text-decoration: none;
+}
+
+.navi-link:hover {
+  background-color: #A8977C;
+  color: white;
+  text-decoration: none;
 }
 
 .bg-for-content {
     background-color: #FFFCF7;
     width: 100%;
 }
-
-
-.header-slide-show{
-    font-family: "Roboto", san-serif;
-    font-size: 20px;
+.carousel {
+    position: relative;
+    margin-top: 40px;
 }
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100%;
+}
+
+/* FOR CLASSES .IMAGE-1, .IMAGE-2, AND .IMAGE-3, REPLACE THE BACKGROUND IMAGE URL WITH YOUR IMAGE URL. THIS SLIDER MUST HAVE 3 IMAGES TO FUNCTION PROPERLY */
+
+.image-1 { 
+  background-image: url(../img/1.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+ background-position: center center;
+}
+
+.image-2 { 
+background-image: url(../img/2.jpg);
+  background-size: 80%; 
+  background-repeat: no-repeat;
+ background-position: center center;
+}
+
+.image-3 { 
+background-image: url(../img/3.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+ background-position: center center;
+}
+
+.image-4 { 
+    background-image: url(../img/4.jpg);
+      background-size: 80%; 
+      background-repeat: no-repeat;
+     background-position: center center;
+    }
+
+.image-5 { 
+background-image: url(../img/5.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+ background-position: center center;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    height:500px;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 10px;
+    height: 10px;
+    line-height: 10px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+bottom:2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/* New Slider CSS End */
+
 
 .about-us {
     font-family: "Optima", serif;
