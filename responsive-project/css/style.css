@@ -1,11 +1,10 @@
-body {
+html {
     background-color: white;
 }
 
 .bg-for-content {
-    background-color: #E6E5E3;
-    width: 460px;
-    height: auto;
+    background-color: #FFFCF7;
+    width: 100%;
 }
 
 .header-slide-show{
