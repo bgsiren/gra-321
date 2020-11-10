@@ -4,7 +4,13 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-.navi{
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.navi {
     overflow: hidden;
     position: relative;
 }
@@ -15,6 +21,12 @@ html {
 
 .navi #links {
     width: 100%;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
 }
 
 .navi-link {
@@ -36,6 +48,7 @@ html {
   top: 53px;
   font-size: 30px;
   color: black;
+  text-decoration: none;
 }
 
 .navi a.icon:hover,
@@ -53,74 +66,74 @@ html {
     background-color: #FFFCF7;
     width: 100%;
 }
+
+/* Carousel CSS */
+
 .carousel {
     position: relative;
-    margin-top: 40px;
 }
 
 .carousel-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
+    height:auto;
 }
 
 .carousel-open:checked + .carousel-item {
     position: static;
-    opacity: 100%;
+    opacity: 100;
 }
 
-/* FOR CLASSES .IMAGE-1, .IMAGE-2, AND .IMAGE-3, REPLACE THE BACKGROUND IMAGE URL WITH YOUR IMAGE URL. THIS SLIDER MUST HAVE 3 IMAGES TO FUNCTION PROPERLY */
-
 .image-1 { 
-  background-image: url(../img/1.jpg);
-  background-size: 80%;
+background-image: url(../img/Carousel1_Cafe.jpg);
+  background-size: cover; 
   background-repeat: no-repeat;
  background-position: center center;
 }
 
 .image-2 { 
-background-image: url(../img/2.jpg);
-  background-size: 80%; 
+background-image: url(../img/Carousel2_Coffee.jpg);
+  background-size: cover; 
   background-repeat: no-repeat;
  background-position: center center;
 }
 
 .image-3 { 
-background-image: url(../img/3.jpg);
-  background-size: 80%;
+background-image: url(../img/Carousel3_Cafe.jpg);
+  background-size: cover; 
   background-repeat: no-repeat;
  background-position: center center;
 }
 
 .image-4 { 
-    background-image: url(../img/4.jpg);
-      background-size: 80%; 
-      background-repeat: no-repeat;
-     background-position: center center;
+    background-image: url(../img/Carousel4_ColdDrinks.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
     }
 
 .image-5 { 
-background-image: url(../img/5.jpg);
-  background-size: 80%;
-  background-repeat: no-repeat;
- background-position: center center;
-}
+    background-image: url(../img/Carousel5_Food.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
 
 .carousel-item {
     position: absolute;
+    width: 80%;
+    height: 516px;
     opacity: 0;
-    height:500px;
+    margin: auto;
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
     display: none;
-    font-size: 10px;
-    height: 10px;
-    line-height: 10px;
+    font-size: 150px;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -128,35 +141,36 @@ background-image: url(../img/5.jpg);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
-    width: 40px;
+    opacity:.5;
     z-index: 10;
 }
 
 .carousel-control.prev {
-    left: 2%;
+    left: 10%;
 }
 
 .carousel-control.next {
-    right: 2%;
+    right: 12%;
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+    color: #A8977C;
 }
 
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5 {
     display: block;
 }
 
 .carousel-indicators {
     list-style: none;
-    margin: 50px;
-    padding: 50px;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    bottom:2%;
+bottom:2%;
     left: 0;
     right: 0;
     text-align: center;
@@ -181,7 +195,9 @@ background-image: url(../img/5.jpg);
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
     color: #428bca;
 }
 
@@ -198,7 +214,8 @@ background-image: url(../img/5.jpg);
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
-/* New Slider CSS End */
+
+/* Carousel CSS End */
 
 
 .about-us {
@@ -207,6 +224,9 @@ background-image: url(../img/5.jpg);
     color: #A8977C;
     text-align: center;
     opacity: 100%;
+    width: 48.26%;
+    height: 175px;
+    margin: auto;
 }
     
 h1{

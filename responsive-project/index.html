@@ -8,7 +8,6 @@
     <meta name="author" content="Yajun 'Beatrice' Guo">
     <link rel="icon" type="image/png" href="./img/favicon_Charlie.jpg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <link href="./css/normalize.css" type="text/css" rel="stylesheet">
     <link href="./css/style.css" type="text/css" rel="stylesheet"> 
   </head>
 
@@ -17,7 +16,7 @@
     <header>
     <div class="navi" id="top"><a href="#top"><img src="
       img/Logo_Name.jpg" alt="Charlie's Cafe Logo" Style="width:128px; height:48px; margin-left:27px; margin-top:40px; margin-bottom:50px; float:left;"></a>   
-      <div id="links" style="float:right; display: block;">
+      <div id="links" style="float:right; display: none;">
         <a class="navi-link" href="#specials">SPECIALS</a>
         <a class="navi-link" href="#beverages">BEVERAGES</a>
         <a class="navi-link" href="#visit-us">VISIT US</a>
@@ -28,63 +27,63 @@
       </div>
       <label class="bars"><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></label>
     </div>
-    
-  <!--Carousel-->
-  <div class="carousel">
-    <div class="carousel-inner">
-        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-        <div class="carousel-item image-1">
+  
+    <!--Carousel--> 
+  <div class="bg-for-content">  
+    <div class="carousel">
+      <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden checked="checked" />
+          <div class="carousel-item image-1">
           </div>
-        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item image-2">
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden />
+          <div class="carousel-item image-2">
           </div>
-        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item image-3">
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden />
+          <div class="carousel-item image-3">
           </div>
-        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item image-4">
+          <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden />
+          <div class="carousel-item image-4">
           </div>
-        <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item image-5">
+          <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden />
+          <div class="carousel-item image-5">
           </div>
-        <label for="carousel-5" class="carousel-control prev control-4">‹</label>
-        <label for="carousel-4" class="carousel-control next control-5">›</label>
-        <label for="carousel-3" class="carousel-control prev control-2">‹</label>
-        <label for="carousel-2" class="carousel-control next control-3">›</label>
-        <label for="carousel-1" class="carousel-control prev control-5">‹</label>
-        <label for="carousel-5" class="carousel-control next control-1">‹</label>
-        <label for="carousel-4" class="carousel-control prev control-3">›</label>
-        <label for="carousel-3" class="carousel-control next control-4">›</label>
-        <label for="carousel-2" class="carousel-control prev control-1">‹</label>
-        <label for="carousel-1" class="carousel-control next control-5">›</label>
-        <ol class="carousel-indicators">
-            <li>
-                <label for="carousel-1" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-2" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-3" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-4" class="carousel-bullet">•</label>
-            </li>
-            <li>
-              <label for="carousel-5" class="carousel-bullet">•</label>
-            </li>
-        </ol>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-5" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-4" class="carousel-control next control-3">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-5" class="carousel-control next control-4">›</label>
+            <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+            <label for="carousel-1" class="carousel-control next control-5">›</label>
+            <label for="carousel-4" class="carousel-control prev control-5">‹</label>
+            <ol class="carousel-indicators">
+                <li>
+                  <label for="carousel-1" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                  <label for="carousel-2" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                  <label for="carousel-3" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                  <label for="carousel-4" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                  <label for="carousel-5" class="carousel-bullet">•</label>
+                </li>
+            </ol>
+        </div>
     </div>
-  </div>
-
-
-  <!--About Us-->
-      <div class="about-us"> 
+    <div class="about-us"> 
       Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! 
       Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods. 
       Come experience the difference! 
       </div>
-    </div>
+  </div>
+
+
 
     <script>
       function myFunction() {
@@ -211,7 +210,7 @@
       <h1>VISIT US</h1>
        </section>  
       <p4>Visit us at Hayden Library, Design North-Architecture, and Biodesign Each location has its own personality, find the one that suits you!</p4>
-     <div class="hayden-library"> <img src="./img/Hayden.jpg" style="width:265px; height: 191px; margin-left:59px; margin-top:50px;">
+     <div class="hayden-library"> <img src="./img/Hayden_Library.jpg" style="width:265px; height: 191px; align-content:center">
       </div> 
       <div class="intros"> Charlie’s Café Hayden Library
         </div>
@@ -223,7 +222,7 @@
         <div class="hours"> 07:00 – 15:00 <br>
           Closed </br>
           </div>
-    <div class="design-north"> <img src="./img/DesignNorth.jpg" style="width:265px; height: 191px; margin-left:59px; margin-top:50px;">
+    <div class="design-north"> <img src="./img/Design_North.jpg" style="width:265px; height: 191px; margin-left:59px; margin-top:50px;">
         </div> 
         <div class="intros"> Charlie’s Café Design North
           </div>
@@ -235,7 +234,7 @@
           <div class="hours"> 07:00 – 15:00 <br>
             Closed </br>
             </div>    
-    <div class="bio-design"> <img src="./img/Biodesign.jpg" style="width:265px; height: 191px; margin-left:59px; margin-top:50px;">
+    <div class="bio-design"> <img src="./img/Biodesign_Buidling.jpg" style="width:265px; height: 191px; margin-left:59px; margin-top:50px;">
       </div> 
         <div class="intros"> Charlie’s Café Biodesign
           </div>
