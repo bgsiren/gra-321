@@ -70,7 +70,7 @@ a:focus {
 /* Carousel CSS */
 
 .carousel {
-    width: 100%;
+    width: 80%;
     height: 0;
     padding-bottom: 70%;
     margin: auto;
@@ -128,7 +128,7 @@ background-image: url(../img/Carousel3_Cafe.jpg);
 .carousel-item {
     position: absolute;
     width: 100%;
-    height: 516px;
+    height: 500px;
     opacity: 0;
     margin: auto;
 }
@@ -151,11 +151,11 @@ background-image: url(../img/Carousel3_Cafe.jpg);
 }
 
 .carousel-control.prev {
-    left: 15%;
+    left: 5%;
 }
 
 .carousel-control.next {
-    right: 15%;
+    right: 5%;
 }
 
 .carousel-control:hover {
@@ -252,16 +252,32 @@ background-image: url(../img/Carousel3_Cafe.jpg);
     margin: auto;
 }
 
+.rows{
+    width: 100%;
+    height: auto;
+}
+
+.size-frame{
+    width: 100%;
+    height: auto;
+    float: left
+}
 .size{
     width: 100%;
+    height: auto;
+}
+
+.items{
+    width: 100%；
     height: auto;
 }
 p1 {
     font-family: Roboto-Medium;
     font-size: 16px;
     color: #8D8D8D;
-    letter-spacing: 5px;
-    padding-bottom: 20px;   
+    letter-spacing: 20px;
+    padding-bottom: 20px;  
+    float: right; 
 }
 
 p2{
@@ -269,7 +285,7 @@ p2{
     font-size: 16px;
     color: #676767;
     letter-spacing: 0;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 p3{
@@ -277,7 +293,6 @@ p3{
     font-size: 16px;
     color: #676767;
     letter-spacing: 0;
-    padding-bottom: 5px;
 }
 
 p {
