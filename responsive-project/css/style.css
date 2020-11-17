@@ -224,7 +224,7 @@ background-image: url(../img/Carousel3_Cafe.jpg);
 
 
 .about-us {
-    font-family: "Optima", serif;
+    font-family: "Optima", sans-serif;
     font-size: 18px;
     color: #A8977C;
     text-align: center;
@@ -235,7 +235,7 @@ background-image: url(../img/Carousel3_Cafe.jpg);
     padding-bottom: 30px;
 }
 
-#specials{
+h{
     font-family: "Unna-Bold", sans-serif;
     font-size: 30px;
     color: #A5977F;
@@ -246,7 +246,7 @@ background-image: url(../img/Carousel3_Cafe.jpg);
     margin: auto;
 }
 
-.special-content{
+.content{
     width: 80%;
     height: auto;
     margin: auto;
@@ -255,47 +255,95 @@ background-image: url(../img/Carousel3_Cafe.jpg);
 .rows{
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-.size-frame{
-    width: 100%;
-    height: auto;
-    float: left
-}
-.size{
-    width: 100%;
-    height: auto;
+
+p {
+    margin:5;   
 }
 
-.items{
-    width: 100%；
-    height: auto;
-}
 p1 {
-    font-family: Roboto-Medium;
+    font-family: "Roboto-Regular", sans-serif;
     font-size: 16px;
-    color: #8D8D8D;
-    letter-spacing: 20px;
-    padding-bottom: 20px;  
-    float: right; 
+    color: #676767;
+    padding-bottom: 16px;  
+    width: 30%;
+
 }
 
 p2{
-    font-family: Roboto-Medium;
+    font-family: "Roboto-Medium", sans-serif;
     font-size: 16px;
     color: #676767;
     letter-spacing: 0;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    width: 
 }
 
 p3{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: #676767;
+    padding-bottom: 5px;
+}
+
+.pricing{
     font-family: Roboto-Regular;
     font-size: 16px;
     color: #676767;
-    letter-spacing: 0;
+    letter-spacing: 0px;
 }
 
-p {
-    margin:5;
-    
+.pricing ul{  
+    list-style-type: none; 
+    margin-top: 0px; 
+    padding: 0px;
+}
+
+.pricing ul li{  
+    width: 15%;
+    display: inline-block;
+}
+
+.extra{
+    font-family: "Optima-Bold", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: right;
+    padding-bottom: 20px; 
+}
+
+p4{
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 20px;
+    color: #676767;
+    letter-spacing: 0;
+    padding-bottom: 20px;
+}
+
+#specials,#beverages, #food, #visit-us, #contact-us, #reviews{
+    font-family: "Unna-Bold", sans-serif;
+    font-size: 30px;
+    color: #A5977F;
+    letter-spacing: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.drink-item-row{
+    width: 100%; 
+    justify-content: space-between; 
+    align-items:flex-start;
+}
+
+pi ul{
+    width: 30%;
+}
+}
+.drink-item-row ul li{
+    width: 20%;
+    display: inline-block;
 }
