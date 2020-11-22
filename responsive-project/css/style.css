@@ -247,7 +247,7 @@ h{
 }
 
 .content{
-    width: 80%;
+    width: 85%;
     height: auto;
     margin: auto;
 }
@@ -264,12 +264,88 @@ p {
 }
 
 p1 {
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    color: #8D8D8D;
+    letter-spacing: 0;
+}
+
+li,ul{
+    margin: 0;
+    padding: 0;
+}
+
+.drink-frame{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+}
+
+.drink-item-row p{
     font-family: "Roboto-Regular", sans-serif;
     font-size: 16px;
     color: #676767;
-    padding-bottom: 16px;  
-    width: 30%;
+    letter-spacing: 0;
+    margin-top: 0;  
+    width: 54%;
+    overflow: hidden;
+    float: left;
+}
 
+.drink-item-row{
+    width: 100%;
+    display: flex;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.drink-item-row ul{
+    width: 46%;
+    list-style-type: none;
+    float: right;
+    text-align: right;
+}
+
+.drink-item-row ul li{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: #676767;
+    letter-spacing: 0;
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin-left: -3px;
+}
+
+.menu-item-row{
+    width: 100%;
+    display: flex;
+    height: 20px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.menu-item-row p {
+    width: 54%;
+}
+
+.menu-item-row ul{
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    color:#676767;
+    letter-spacing: 0;
+    width: 46%;
+    height:20px;
+    list-style: none;
+    float: right;
+    text-align: right;
+}
+
+.menu-item-row ul li{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin-left: -3px;
 }
 
 p2{
@@ -277,15 +353,22 @@ p2{
     font-size: 16px;
     color: #676767;
     letter-spacing: 0;
-    padding-bottom: 5px;
-    width: 
+    margin-bottom: 5px;
 }
 
 p3{
     font-family: "Roboto-Regular", sans-serif;
     font-size: 16px;
     color: #676767;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p4{
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 20px;
+    color: #676767;
+    letter-spacing: 0;
+    padding-bottom: 20px;
 }
 
 .pricing{
@@ -309,17 +392,9 @@ p3{
 .extra{
     font-family: "Optima-Bold", sans-serif;
     font-size: 16px;
-    color: #000000;
+    color: #676767;
     text-align: right;
     padding-bottom: 20px; 
-}
-
-p4{
-    font-family: "Roboto-Bold", sans-serif;
-    font-size: 20px;
-    color: #676767;
-    letter-spacing: 0;
-    padding-bottom: 20px;
 }
 
 #specials,#beverages, #food, #visit-us, #contact-us, #reviews{
@@ -339,11 +414,42 @@ p4{
     align-items:flex-start;
 }
 
-pi ul{
-    width: 30%;
+.items, .details, .pricing {
+    margin-bottom: 5px;
 }
+
+.pricing-center li {
+    text-align: center;
 }
-.drink-item-row ul li{
-    width: 20%;
+
+.price-row{
+    width: 100%;
+    display: flex;
+    height: 20px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.price-row p{
+    width: 54%;
+}
+
+.price-row ul{
+    width: 46%;
+}
+
+.price-row ul li{
+    width: 10%;
     display: inline-block;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    color:#676767;
+}
+
+.sub-intro{
+    font-family: Optima-Regular;
+    font-size: 18px;
+    color: #676767;
+    letter-spacing: 0;
+    text-align: center;
 }
