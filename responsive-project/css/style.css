@@ -4,6 +4,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    margin: 0px;
+}
+
 a,
 a:hover,
 a:focus {
@@ -452,4 +456,28 @@ p4{
     color: #676767;
     letter-spacing: 0;
     text-align: center;
+    width: 90%;
+    margin: auto;
+
 }
+
+.location{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.intro p{
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #676767;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.hayden-library{
+    background-image: url("../img/Hayden_Library.jpg");
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%
+    background-position: center center;
