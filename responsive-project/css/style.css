@@ -16,6 +16,7 @@ a:focus {
 
 a: hover{
     decoration: none;
+    color: #black;
 }
 
 .navi {
@@ -406,7 +407,7 @@ p4{
     padding-bottom: 20px; 
 }
 
-#specials,#beverages, #food, #visit-us, #contact-us, #reviews{
+#specials,#beverages, #food, #visit-us, #contact-us, #follow-us, #reviews{
     font-family: "Unna-Bold", sans-serif;
     font-size: 30px;
     color: #A5977F;
@@ -421,6 +422,7 @@ p4{
     width: 100%; 
     justify-content: space-between; 
     align-items:flex-start;
+    float: left;
 }
 
 .items, .details, .pricing {
@@ -544,4 +546,58 @@ p4{
 
 .content-row{
     margin-bottom: 12px;
+    float: left;
+}
+
+.contact-detail{
+    width: 333px;
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+
+.contact-info{
+    max-width: 150px;;
+    position: relative;
+    float: left;
+}
+
+.contact-content{
+    max-width: 715px;
+}
+
+.sns-row{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.facebookicon{
+    width: 15%;
+    float: left;
+    margin-right: 10px; 
+}
+
+.facebook-link{
+    width: 80%;
+    float: right;
+    word-wrap: break-word;
+}
+
+.yelpicon{
+    width: 15%;
+    float: left;
+    margin-right: 10px; 
+}
+
+.yelp-link{
+    width: 70%;
+    float: right;
+    word-wrap: break-word;
+}
+
+
+
+.mustache-logo{
+    display: inline-block;
 }
