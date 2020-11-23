@@ -9,9 +9,13 @@ body{
 }
 
 a,
-a:hover,
 a:focus {
-    text-decoration: none;
+    color: #676767;
+    letter-spacing:0.58px;
+}
+
+a: hover{
+    decoration: none;
 }
 
 .navi {
@@ -69,6 +73,7 @@ a:focus {
 .bg-for-content {
     background-color: #FFFCF7;
     width:100%;
+    height: auto;
 }
 
 /* Carousel CSS */
@@ -464,6 +469,7 @@ p4{
 .location{
     margin-top: 20px;
     width: 100%;
+    float: left;
 }
 
 .intro p{
@@ -474,10 +480,68 @@ p4{
     text-align: center;
 }
 
-.hayden-library{
-    background-image: url("../img/Hayden_Library.jpg");
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%
-    background-position: center center;
+.hayden-library, .design-north, .bio-design {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.img-tip{
+    position: absolute;
+    width: 100%;
+    background: rgba(2, 2, 2, 0.6); 
+    margin: auto;
+    font-family: "Roboto-Bold",sans-serif;
+    font-size: 16px;
+    color: #FEFEFE;
+    letter-spacing: 0;
+    text-align: center;
+    bottom: 0;
+    padding: 22px 0;
+    width: 100%;
+}
+
+.cafe-location{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: #676767;
+    letter-spacing: 0;
+}
+
+.days{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: #676767;
+    letter-spacing: 0;
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+.hours{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: #676767;
+    letter-spacing: 0;
+    text-align: right;
+    width: 50%;
+    float: left;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.plan-view{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    float: left;
+}
+
+.content-row{
+    margin-bottom: 12px;
+}
