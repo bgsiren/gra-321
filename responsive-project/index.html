@@ -8,23 +8,25 @@
     <meta name="author" content="Yajun 'Beatrice' Guo">
     <link rel="icon" type="image/png" href="./img/favicon_Charlie.jpg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0" />
-    <link href="./css/normalize1.css" type="text/css" rel="stylesheet">
     <link href="./css/style.css" type="text/css" rel="stylesheet"> 
   </head>
 
   <body>
   <!--Header-->
-    <header>
-    <div class="navi" id="top"><a href="#top"><img src="
-      img/Logo_Name.jpg" alt="Charlie's Cafe Logo" Style="width:128px; height:48px; margin-left:27px; margin-top:40px; margin-bottom:50px; float:left;"></a>   
-      <div id="links" style="float:right; display: none;">
-        <a class="navi-link" href="#specials">SPECIALS</a>
-        <a class="navi-link" href="#beverages">BEVERAGES</a>
-        <a class="navi-link" href="#visit-us">VISIT US</a>
-        <a class="navi-link" href="#food">FOOD</a>
-        <a class="navi-link" href="#contact-us">CONTACT US</a>
-        <a class="navi-link" href="#follow-us">FOLLOW US</a>
-        <a class="navi-link" href="#reviews">REVIEWS</a>
+  <header>
+    <div class="navi" id="top">
+      <a id="logo-link" href="#top" class="clearfix"><img src="
+      img/Logo_Name.jpg" alt="Charlie's Cafe Logo"></a>   
+      <div id="links" style="float:right;" class="navi-links-hidden">
+        <div id="links-inner" class="clearfix">
+          <a class="navi-link" href="#specials">SPECIALS</a>
+          <a class="navi-link" href="#beverages">BEVERAGES</a>
+          <a class="navi-link" href="#visit-us">VISIT US</a>
+          <a class="navi-link" href="#food">FOOD</a>
+          <a class="navi-link" href="#contact-us">CONTACT US</a>
+          <a class="navi-link" href="#follow-us">FOLLOW US</a>
+          <a class="navi-link" href="#reviews">REVIEWS</a>
+        </div>
       </div>
       <label class="bars"><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></label>
     </div>
@@ -35,18 +37,23 @@
       <div class="carousel-inner">
           <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden checked="checked" />
           <div class="carousel-item image-1" alt="cafe overview">
+            <img src="img/Carousel1_Cafe.jpg">
           </div>
           <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden />
           <div class="carousel-item image-2" alt="coffee in the cups">
+            <img src="img/Carousel2_Coffee.jpg">
           </div>
           <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden />
           <div class="carousel-item image-3" alt="cafe front desk">
+            <img src="img/Carousel3_Cafe.jpg">
           </div>
           <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden />
           <div class="carousel-item image-4" alt="cold drinks">
+            <img src="img/Carousel4_ColdDrinks.jpg">
           </div>
           <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden />
           <div class="carousel-item image-5" alt="panini">
+            <img src="img/Carousel5_Food.jpg">
           </div>
             <label for="carousel-2" class="carousel-control next control-1">›</label>
             <label for="carousel-5" class="carousel-control prev control-1">‹</label>
@@ -78,64 +85,62 @@
         </div>
     </div>
     <div class="about-us"> 
-      Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! 
-      Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods. <br>
+      Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! <br />
+      Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods. <br />
       Come experience the difference! 
-      </div>
+    </div>
   </div>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("links");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
+  <script>
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.className.match(/(?:^|\s)navi-links-display(?!\S)/)) {
+        x.classList.remove("navi-links-display");
+        x.classList.add("navi-links-hidden");
+      } else {
+        x.classList.remove("navi-links-hidden");
+        x.classList.add("navi-links-display");
       }
-    </script>
+    }
+  </script>
 
-   </header> 
+  </header> 
 
 <!--SPECIALS-->
   <section id="specials"> SPECIALS
     </section>
-    <div class="content">
+    <div class="content specials-content clearfix">
 
       <div class="price-row">
           <p></p>
             <ul>
-              <li>S</li>
-              <li>M</li>
-              <li>L</li>
+              <li>S</li><li>M</li><li>L</li>
             </ul>
       </div>
 
       <div class="rows">
-          <div class="items">
+          <div class="specials-items">
             <p2>Thai Iced Cappuccino</p2>
           </div>
-          <div class="details">
+          <div class="specials-details">
             <p3>Channel your inner exotic spirit with a double shot of espresso finished with sweetened condensed milk</p3>
           </div>
-          <div class="pricing pricing-center"> 
+          <div class="specials-pricing pricing-center"> 
             <ul>
-              <li>-.--</li>
-              <li>4.25</li>
-              <li>-.--</li>
+              <li>-.--</li><li>4.25</li><li>-.--</li>
             </ul>
           </div>
         </div>
 
       <div class="rows">
-        <div class="items">
+        <div class="specials-items">
           <p2>Joyous Almond Latte</p2>
         </div>
-        <div class="details">
+        <div class="specials-details">
           <p3>Imagine drinking the candy or … <br>
           only better!! </p3>
         </div>
-        <div class="pricing pricing-center">  
+        <div class="specials-pricing pricing-center">  
           <ul>
             <li>4.55</li>
             <li>4.95</li>
@@ -145,14 +150,14 @@
       </div>
         
         <div class="rows">
-          <div class="items">
+          <div class="specials-items">
             <p2>Banana Nut Mocha</p2>
           </div>
-          <div class="details">
+          <div class="specials-details">
             <p3>You’ll go BANANAS!!<br>
               It’s so yum… yep, just yum!  </p3>
           </div>
-          <div class="pricing pricing-center">  
+          <div class="specials-pricing pricing-center clearfix">  
             <ul>
               <li>4.00</li>
               <li>4.50</li>
@@ -170,14 +175,14 @@
 
 
   <div class="bg-for-content">
-<!--BEVERAGES-->
+    <!--BEVERAGES-->
     <section id="beverages">BEVERAGES
         </section>
-      <div class="content">
+      <div class="content beverages-content clearfix">
 
         <!--Cold Drinks-->
-        <div class="drink-frame">
-          <div class="rows">
+        <div class="drink-frame drink-frame-left">
+          <div class="drink-frame-caption">
           <p4>Cold Drinks</p4>
           </div>
           <div class="menu-item-row">
@@ -273,8 +278,8 @@
         </div>
 
           <!--HOT DRINKS-->
-          <div class="drink-frame">
-            <div class="menu-item-row">
+          <div class="drink-frame drink-frame-right">
+            <div class="drink-frame-caption">
             <p4>Hot Drinks</p4>
             </div>
             <div class="menu-item-row">
@@ -400,9 +405,9 @@
   <div>
     <section id="food">FOOD
       </section>
-    <div class="content ">
+    <div class="content content-food clearfix">
 
-      <div class="rows">
+      <div class="rows clearfix">
         <div class="items">
           <p2>Italiano</p2>
         </div>
@@ -473,7 +478,7 @@
     <div class="content clearfix">
 
       <div class="sub-intro">
-        Visit us at Hayden Library, Design North-Architecture, and Biodesign Each location has its own personality, find the one that suits you!
+        Visit us at Hayden Library, Design North-Architecture, and Biodesign. Each location has its own personality, find the one that suits you!
       </div> 
        
       <div class="location">
@@ -490,7 +495,7 @@
           </div>
 
         <div class="days"> 
-              Monday-Friday <br> 
+              Monday – Friday <br> 
               Saturday – Sunday </br>
           </div>
 
@@ -516,7 +521,7 @@
           </div>
 
         <div class="days"> 
-              Monday-Friday <br> 
+              Monday – Friday <br> 
               Saturday – Sunday </br>
           </div>
 
@@ -527,8 +532,7 @@
 
       </div>
 
-      <div class="location">
-
+      <div class="location-last">
         <div class="bio-design"> 
           <img src="img/Biodesign.jpg" alt="Biodesign, ASU" style="max-width: 100%; max-height: 100%; display: block;">
           <div class="img-tip"> 
@@ -542,7 +546,7 @@
           </div>
 
         <div class="days"> 
-              Monday-Friday <br> 
+              Monday – Friday <br> 
               Saturday – Sunday </br>
           </div>
 
@@ -562,12 +566,12 @@
   </div>
 
   <!--CONTACT US--> 
-  <div class="content contact-content">
+  <div class="content contact-content clearfix">
     <section id="contact-us"> CONTACT US
     </section>
   
 
-      <div class="content-row">
+      <div class="content-row contact-row">
         <div class="contact-detail">
           <p2>E-mail Address</p2>
         </div>
@@ -576,7 +580,7 @@
         </div>
       </div>
 
-      <div class="content-row">
+      <div class="content-row contact-row">
         <div class="contact-detail">
           <p2>Charlie’s Café Hayden Library</p2>
         </div>
@@ -585,7 +589,7 @@
         </div>       
       </div>
 
-      <div class="content-row">
+      <div class="content-row contact-row">
         <div class="contact-detail">
           <p2>Charlie’s Café Design North</p2>
         </div>
@@ -594,7 +598,7 @@
         </div>
       </div>
 
-      <div class="content-row">
+      <div class="content-row contact-row">
         <div class="contact-detail">
             <p2>Charlie’s Café Biodesign</p2>
         </div>
@@ -609,7 +613,7 @@
 
   <section id="follow-us"> FOLLOW US</section> 
 
-  <div class="content">
+  <div class="content follow-us-content">
     <div class="sns-row">
       <div class="facebookicon"> <img src="./img/FB_Logo.png" style="width:37px; height:37px;">
         </div>
@@ -624,8 +628,8 @@
       <div class="yelpicon"> <img src="./img/Yelp_Logo.png" style="width: 70px; height: 34px;">
         </div>
       <div class="yelp-link">
-        <a href= "https://www.facebook.com/charliescafeasu/">
-        https://www.facebook.com/charliescafeasu/
+        <a href= "https://www.yelp.com/biz/charlie-s-café-tempe">
+        https://www.yelp.com/biz/charlie-s-café-tempe
         </a>
       </div>
     </div>
@@ -634,27 +638,44 @@
    
 
   <!--REVIEWS--> 
-  <section id="reviews">REVIEWS </section> 
-  <div class="content">  
+  <div class="bg-for-reviews">
+    <section id="reviews">REVIEWS </section> 
+    <div class="content reviews-content">
+      <div class="comment-outer clearfix">
+      <div class="comment clearfix">
+        <div class="timestamp">
+          Oct. 2019
+        </div>
+        <div class="recommendation">
+          Recommended
+        </div>
+        <div class="comment-box">
+          Place gets extremely busy sometimes and the workers sometimes forget the orders. It gives you a super chill vibe. The manager of the place actually refilled my chai iced latte while I patiently waited for my breakfast sandwich. I worked at an ice cream shop that would get extremely busy once and customers would sometimes have attitudes. Great customer service and vibes. I give it 4/5.
+        </div>
+      </div>
+      </div>
 
-    <div class="sub-intro">
-      Share your experience at Charlie’s Café and earn a chance to win a FREE DRINK!
-    </div> 
-
-    <div class="comment-box">
+      <div class="comment-outer clearfix">
+      <div class="comment clearfix">
+        <div class="timestamp">
+          Mar. 2019
+        </div>
+        <div class="recommendation">
+          Recommended
+        </div>
+        <div class="comment-box">
+          A cute little bistro set just inside the entrance to ASUs Biodesign Institute Building B. Prices for drinks are reasonable and there's some snacks and a couple chairs available for a quick rest if needed. I've visited this building for work several times and this has been a delicious addition to my mornings here.
+        </div>
+      </div>
+      </div>
 
     </div>
-
-    <div class="previous-comment">
-
-    </div>
-
   </div>
 
   <footer>
   <!--Logo At The Bottom--> 
   <div class="mustache-logo" id="footer-logo"> <a href="#top">
-    <img src="./img/Logo.jpg" style="width:30%; height:30%; margin: auto;"> </a>
+    <img src="./img/Logo.jpg"> </a>
   </div>
   </footer>
 
